@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "api": "apps/api",
+    "api-interfaces": "libs/api-interfaces",
+    "production-angular": "apps/production-angular",
+    "production-angular-e2e": "apps/production-angular-e2e"
+  }
+}
