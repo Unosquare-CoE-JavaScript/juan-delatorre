@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@production-angular/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@jp/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@jp/utilities": ["libs/utilities/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

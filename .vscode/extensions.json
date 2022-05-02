@@ -4,6 +4,11 @@
     "nrwl.angular-console",
     "esbenp.prettier-vscode",
     "firsttris.vscode-jest-runner",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "gruntfuggly.todo-tree",
+    "christian-kohler.path-intellisense",
+    "eg2.vscode-npm-script",
+    "yzhang.markdown-all-in-one",
+    "EditorConfig.EditorConfig"
   ]
 }
