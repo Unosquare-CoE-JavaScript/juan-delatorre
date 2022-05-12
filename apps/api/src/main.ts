@@ -12,7 +12,7 @@ import LowDBStore from 'connect-lowdb'
 import { AppModule } from './app/app.module'
 import { ApplicationOptions } from './types'
 
-async function bootstrap({ prefix, port, secrets }: ApplicationOptions) {
+async function bootstrap ({ prefix, port, secrets }: ApplicationOptions) {
   const app = await NestFactory.create(AppModule, { cors: true })
   const Store = LowDBStore(session)
 
@@ -34,14 +34,15 @@ async function bootstrap({ prefix, port, secrets }: ApplicationOptions) {
   return app.listen(port)
 }
 
+// TODO settings from storage
 const config: ApplicationOptions = {
   port: Number(process.env.PORT || 3334),
   prefix: 'api',
   secrets: new Map([
-    [ 'session', 'secret' ]
+    [ 'session', 'secret' ], // TODO get secrets from secure storage
   ]),
 }
 
 bootstrap(config)
-.then(() => Logger.log(`🚀 Application is running on: http://localhost:${config.port}/${config.prefix}`))
-.catch(reason => Logger.log(`Error listening: ${reason}`))
+  .then(() => Logger.log(`🚀 Application is running on: http://localhost:${config.port}/${config.prefix}`))
+  .catch(reason => Logger.log(`Error listening: ${reason}`))

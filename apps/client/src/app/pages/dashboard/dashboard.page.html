@@ -1,0 +1,5 @@
+<mat-form-field appearance="fill">
+  <mat-label>Task</mat-label>
+  <input matInput #message maxlength="256" placeholder="Describe your task..." (keyup.enter)="$event.target && addTask($event.target)">
+  <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+</mat-form-field>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+<defs>
+  <style>
+    @media (prefers-color-scheme: light) { rect { fill: #1D3557 }}
+  </style>
+</defs>
+<rect width="640" height="640" fill="none" />
+<path d="m234 200a200 200,0 00-67 40l154 185 283-340a250 250,0 00-63-40l-222 370" fill="#f1faee" />
+<path d="m430 230a200 200,0 00-190-13l80 200z" fill="#a8dadc" />
+<path d="m180 255a200 200,0 00160 345l-19-176z" fill="#457b9d" />
+<path d="m340 600a200 200,0 00118-340l-137 163z" fill="#FCA311" />
+</svg>

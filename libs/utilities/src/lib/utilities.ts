@@ -1,4 +1,4 @@
 
-export function randomNumber (max: number): number {
-  return Number(String(Date.now() / Math.random()).slice(0, max))
+export function randomID (length: number): string {
+  return String(Date.now() / Math.random()).slice(0, length)
 }

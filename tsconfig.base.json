@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@jp/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@jp/core": ["libs/core/src/index.ts"],
       "@jp/utilities": ["libs/utilities/src/index.ts"]
     }
   },

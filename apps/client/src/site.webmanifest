@@ -1,0 +1,41 @@
+{
+  "id": "tasklist",
+  "name": "Tasklist",
+  "short_name": "Tasklist",
+  "description": "Tasklist is a task management tool",
+  "categories": ["tasks", "productivity"],
+
+  "theme_color": "#1d3557",
+  "background_color": "#1d3557",
+
+  "start_url": "/",
+  "scope": "/",
+  "lang": "en-US",
+  "dir": "ltr",
+
+  "display": "minimal-ui",
+  "orientation": "landscape-primary",
+
+  "icons": [{
+      "sizes": "192x192",
+      "src": "/assets/icon192.png?v=1",
+      "type": "image/png"
+    },
+    {
+      "sizes": "512x512",
+      "src": "/assets/icon512.png?v=1",
+      "type": "image/png"
+    },
+    {
+      "sizes": "any",
+      "src": "/assets/icon.svg",
+      "type": "image/svg+xml"
+    },
+    {
+      "sizes": "any",
+      "src": "/assets/icon-monochrome.svg",
+      "type": "image/svg+xml",
+      "purpose": "monochrome"
+    }
+  ]
+}

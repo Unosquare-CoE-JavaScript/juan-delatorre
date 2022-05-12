@@ -1,0 +1,3 @@
+- [ ] Database connections in configuration
+- [ ] Proper secrets store
+- [ ] 

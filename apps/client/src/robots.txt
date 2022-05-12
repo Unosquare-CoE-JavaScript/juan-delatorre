@@ -1,0 +1,7 @@
+User-agent: Googlebot-Image
+Disallow: /assets/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://liteconusa.com/sitemap.xml

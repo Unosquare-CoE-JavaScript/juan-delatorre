@@ -1,0 +1,49 @@
+
+:where(
+  :not(
+    iframe, embed, video, canvas, img, svg, svg *, /* Embedded content */
+    option, optgroup, fieldset, legend, progress, meter /* Form Fields */
+  )
+) {
+  all: unset;
+  display: revert;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  user-select: none;
+  cursor: default;
+  position: relative;
+  font-family: inherit;
+}
+
+svg, svg use {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  height: 100vh;
+}
+
+a {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+video[poster] {
+  object-fit: cover;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input, textarea, [contenteditable], [selectable] {
+  user-select: text;
+  cursor: text;
+}

@@ -1,0 +1,40 @@
+@use './reset';
+@use '@angular/material' as material;
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+@include material.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$client-primary: material.define-palette(material.$indigo-palette);
+$client-accent: material.define-palette(material.$pink-palette, A200, A100, A400);
+$client-warn: material.define-palette(material.$red-palette);
+
+$client-theme: material.define-light-theme((
+  color: (
+    primary: $client-primary,
+    accent: $client-accent,
+    warn: $client-warn,
+  )
+));
+
+@include material.all-component-themes($client-theme);
+
+/* Palette
+#0299DE
+#16B5FD
+#0081AF
+#F7FFF7
+*/
+
+:root {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100%;
+}
